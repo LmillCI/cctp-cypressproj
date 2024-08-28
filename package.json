@@ -1,0 +1,23 @@
+{
+  "name": "cypressbasic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.13.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-terminal-report": "^6.1.2",
+    "cypress-timestamps": "^1.2.3"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "dateformat": "^5.0.3",
+    "jsonpath": "^1.1.1"
+  }
+}

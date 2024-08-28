@@ -1,0 +1,42 @@
+cypress\e2e\demo.cy.js:
+    Demo -> Testcase1
+                        Time: 1724839828766
+            cy:log (K): Google page visits
+                        Time: 1724839828790
+        cy:command (K): visit	https://www.google.com/
+                        Time: 1724839830791
+            cy:xhr (K): GET https://www.google.com/complete/search?q&cp=0&client=gws-wiz&xssi=t&gs_pcrt=2&hl=en-IN&authuser=0&psi=lvfOZqPDC-aP2roP_Yv88AY.1724839830741&dpr=1&nolsbt=1
+                        Status: 200
+                        Time: 1724839830800
+          cy:fetch (K): GET https://www.google.com/xjs/_/js/md=2/k=xjs.hd.en.s55WiEAMIO4.O/am=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAhAAFAACAAgAAAAAAAAAAAAAAAAQIAQBEAQAAAgA4AACCABAAQEAAACBAEIBHmQAAAsAEAAAAAEAAAASAAAAQAAAABgAAQAAAAAAAQAEAAAAAAAAAAAAAAADAAAIIAAAAAAAAAAAAAAEAAABABwAAAAAAAQAAAQEAMEAGEAAACAAAAEAPAIIHwCCFBQAAAAAAAAAAAAAAApAgmAsJKAiAAAAAAAAAAAAAAAAAAEhJExc2/rs=ACT90oG4I8S2i-QIAGkq2afCVphObVUo1w
+                        Status: 200
+                        Time: 1724839831195
+          cy:fetch (K): GET https://www.google.com/xjs/_/ss/k=xjs.hd.Ry4vZNqc0Nw.L.B1.O/am=AFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAoADoSQCAAAA2ACAAAAAAAgAIAAAAAABAAQAAAQQwAAAAAEAAAERABAAIEAAAAAAQAgIAEIACIUCABASAIAoBAAAABgAAQgAYYBiAUAHAKEAAAAAAgIAIAAAAAGoEIEAAgB6BADAABBEAAEJAByAAAAIABIAAAAQEMEAGEAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAKAAAAAAAAAAAAAAAAAAAAAAB/d=0/br=1/rs=ACT90oFxTJAbbq8JaweWNNyNYs1qC3lntQ/m=syjw,syl1?xjs=s4
+                        Status: 200
+                        Time: 1724839831220
+            cy:xhr (K): GET https://www.google.com/client_204?cs=1&opi=89978449
+                        Status: 204
+                        Time: 1724839831224
+            cy:xhr (K): GET https://www.google.com/async/hpba?vet=10ahUKEwij5v2KuZeIAxXmh1YBHf0FH24Qj-0KCBQ..i&ei=lvfOZqPDC-aP2roP_Yv88AY&opi=89978449&yv=3&sp_imghp=false&sp_hpep=1&stick=&cs=0&async=_basejs:%2Fxjs%2F_%2Fjs%2Fk%3Dxjs.hd.en.s55WiEAMIO4.O%2Fam%3DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAhAAFAACAAgAAAAAAAAAAAAAAAAQIAQBEAQAAAgA4AACCABAAQEAAACBAEIBHmQAAAsAEAAAAAEAAAASAAAAQAAAABgAAQAAAAAAAQAEAAAAAAAAAAAAAAADAAAIIAAAAAAAAAAAAAAEAAABABwAAAAAAAQAAAQEAMEAGEAAACAAAAEAPAIIHwCCFBQAAAAAAAAAAAAAAApAgmAsJKAiAAAAAAAAAAAAAAAAAAEhJExc2%2Fdg%3D0%2Fbr%3D1%2Frs%3DACT90oG4I8S2i-QIAGkq2afCVphObVUo1w,_basecss:%2Fxjs%2F_%2Fss%2Fk%3Dxjs.hd.Ry4vZNqc0Nw.L.B1.O%2Fam%3DAFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAoADoSQCAAAA2ACAAAAAAAgAIAAAAAABAAQAAAQQwAAAAAEAAAERABAAIEAAAAAAQAgIAEIACIUCABASAIAoBAAAABgAAQgAYYBiAUAHAKEAAAAAAgIAIAAAAAGoEIEAAgB6BADAABBEAAEJAByAAAAIABIAAAAQEMEAGEAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAKAAAAAAAAAAAAAAAAAAAAAAB%2Fbr%3D1%2Frs%3DACT90oFxTJAbbq8JaweWNNyNYs1qC3lntQ,_basecomb:%2Fxjs%2F_%2Fjs%2Fk%3Dxjs.hd.en.s55WiEAMIO4.O%2Fck%3Dxjs.hd.Ry4vZNqc0Nw.L.B1.O%2Fam%3DAFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAApADtSQCAAgA2ACAAAAAAAgAIAAQIAQBEAQAAAwQ4AACCAFAAQERABCBIEIBHmQAQAsIEEIACIUCABASAIAoRAAAABgAAQgAYYBiAUAHAKEAAAAAAgIAIAADAAGoMIEAAgB6BADAABBEAAEJAByAAAAIABYAAAQUEMEAGEAAACAAAAEAPAIIHwCCFBQAAAAAAAAAAAAAAApAgmAsJKAiAAAAAAAAAAAAAAAAAAEhJExc2%2Fd%3D1%2Fed%3D1%2Fdg%3D0%2Fbr%3D1%2Fujg%3D1%2Frs%3DACT90oGs21ZL2aLTk2ymLrnQDqRR46OKew,_fmt:prog,_id:_lvfOZqPDC-aP2roP_Yv88AY_8
+                        Status: 200
+                        Time: 1724839831758
+            cy:xhr (K): POST https://ogads-pa.googleapis.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
+                        Status: 200
+                        Time: 1724839832368
+            cy:xhr (K): POST https://play.google.com/log?format=json&hasfast=true
+                        Status: 200
+                        Time: 1724839833173
+          cy:fetch (K): POST https://play.google.com/log?format=json&hasfast=true&authuser=0
+                        Status: 200
+                        Time: 1724839833254
+        cy:command (K): screenshot
+                        Time: 1724839834376
+        cy:command (K): screenshot
+                        Time: 1724839834402
+            cy:xhr (K): POST https://play.google.com/log?format=json&hasfast=true
+                        Status: 200
+                        Time: 1724839834764
+            cy:log (K): bye
+                        Time: 1724839834776
+        cy:command (K): task	readLogFile
+
