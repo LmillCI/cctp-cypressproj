@@ -1,0 +1,20 @@
+{
+  "2024-08-28T10:12:30.226Z": {
+    "TestfileName": "Sampletest.cy.js",
+    "Screenshotname": "Sample suite -- TestCase1-  verify title-negative test (failed).png",
+    "path": "C:\\Users\\2250658\\OneDrive - Cognizant\\Cypress AUTOMATION\\cypress\\screenshots\\Sampletest.cy.js\\Sample suite -- TestCase1-  verify title-negative test (failed).png",
+    "takenAt": "2024-08-28T10:12:30.220Z"
+  },
+  "2024-08-28T10:12:40.117Z": {
+    "TestfileName": "Sampletest.cy.js",
+    "Screenshotname": "Sample suite -- TestCase2 - Saucedemo Site.png",
+    "path": "C:\\Users\\2250658\\OneDrive - Cognizant\\Cypress AUTOMATION\\cypress\\screenshots\\Sampletest.cy.js\\Sample suite -- TestCase2 - Saucedemo Site.png",
+    "takenAt": "2024-08-28T10:12:40.099Z"
+  },
+  "2024-08-28T10:12:41.754Z": {
+    "TestfileName": "Sampletest.cy.js",
+    "Screenshotname": "Sample suite -- TestCase2 - Saucedemo Site (1).png",
+    "path": "C:\\Users\\2250658\\OneDrive - Cognizant\\Cypress AUTOMATION\\cypress\\screenshots\\Sampletest.cy.js\\Sample suite -- TestCase2 - Saucedemo Site (1).png",
+    "takenAt": "2024-08-28T10:12:41.751Z"
+  }
+}
