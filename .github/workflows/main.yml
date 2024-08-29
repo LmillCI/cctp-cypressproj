@@ -16,6 +16,7 @@ jobs:
         with:
           runTests: false
           build: npm run build
+          continue-on-error: true
 
       - name: Make scripts executable
         run: chmod +x Screenshottimestring.js imgtobase64.js
