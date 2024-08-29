@@ -11,10 +11,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: npminstall
-        uses: cypress-io/github-action@v6
-        with:
-         run: npm install
+      - name: Install dependencies
+        run: npm install
 
       - name: Cypress install
         uses: cypress-io/github-action@v6
@@ -48,3 +46,7 @@ jobs:
         with:
           name: save-screenshots
           path: ./cypress/screenshots
+
+      - name: Run Cypress tests
+        run: npx cypress run --spec "cypress/integration/your-test-file.js"
+        continue-on-error: true
