@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-      "build" : "npx cypress run --spec cypress\e2e\demo.cy.js"
+      "build" : "npx cypress run --spec cypress\\e2e\\demo.cy.js"
   },
   "keywords": [],
   "author": "",
