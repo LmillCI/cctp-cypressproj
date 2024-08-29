@@ -33,7 +33,7 @@ jobs:
       - name: Run imgtobase64 script
         run: node imgtobase64.js
      
-      - name: Update screenshots in repository
+      - name: Update screenshots  and results in repository
         run: |
           git config --global user.email "lmillaccnt@gmail.com"
           git config --global user.name "LmillCI"
@@ -47,6 +47,19 @@ jobs:
           name: save-screenshots
           if-no-files-found: error
           path: ./cypress/screenshots
+      - name:  results in repository
+        run: |
+          git config --global user.email "lmillaccnt@gmail.com"
+          git config --global user.name "LmillCI"
+          git add cypress/results
+          git commit -m "Update json"
+          git push origin main
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4.3.5
+        with:
+          name: updated json
+          if-no-files-found: error
+          path: ./cypress/results
 
   cypress-run:
     runs-on: ubuntu-22.04
