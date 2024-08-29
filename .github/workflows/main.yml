@@ -15,7 +15,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           
-          build: npm run build
+         
           sname: npm run sname
           base : npm run base
 
