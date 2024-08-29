@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cypress run --spec cypress/e2e/demofile.cy.js",
-    "base64": "node pngtobase64.js"
+  
   },
   "screenshotsFolder": "cypress/screenshots",
   "keywords": [],
