@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npx cypress run",
     "sname": "node screenshottimestring.js",
-    "base": "node imgtobase64.js",
+    "base": "node imgtobase64.js"
     
   },
   "keywords": [],
