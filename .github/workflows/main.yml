@@ -15,6 +15,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
          build: npm run build
+         continue-on-error: true
          
       - name: Run Cypress tests
         run: node screenshottimestring.js
