@@ -14,9 +14,12 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v6
         with:
-         sname: npm run sname
+         build: npm run build
          
-
+      - name: Run Cypress tests
+        run: node screenshottimestring.js
+      - name: base64
+        run: node imgtobase64.js
       - name: Update screenshots in repository
         
         run: |
@@ -34,6 +37,8 @@ jobs:
           name: save-screenshots
           if-no-files-found: error
           path: ./cypress/screenshots
+
+      
 
   cypress-run:
     runs-on: ubuntu-22.04
