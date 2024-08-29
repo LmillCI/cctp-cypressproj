@@ -11,11 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v6
-        with:
-          build: npm run build
-
+     
+      - name: Run Cypress tests
+        run: "node Screenshottimestring.js"
+       
       - name: Update screenshots in repository
         run: |
           git config --global user.email "lmillaccnt@gmail.com"
@@ -44,6 +43,4 @@ jobs:
           name: save-screenshots
           path: ./cypress/screenshots
 
-      - name: Run Cypress tests
-        run: npx cypress run --spec "cypress/integration/your-test-file.js"
-       
+     
