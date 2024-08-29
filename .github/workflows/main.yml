@@ -1,0 +1,50 @@
+name: Cypress Tests with Dependency and Artifact Caching
+
+on: push
+
+jobs:
+  install:
+    runs-on: ubuntu-22.04
+    permissions:
+          contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cypress install
+        uses: cypress-io/github-action@v6
+        with:
+          
+          build: npm run build
+
+      - name: Update screenshots in repository
+        
+        run: |
+          git config --global user.email "lmillaccnt@gmail.com"
+          git config --global user.name "LmillCI"
+          git add cypress/screenshots
+          git commit -m "Update screenshots"
+          git push origin master
+        
+
+      - name: Upload screenshots artifact
+        uses: actions/upload-artifact@v4.3.5
+      
+        with:
+          name: save-screenshots
+          if-no-files-found: error
+          path: ./cypress/screenshots
+
+  cypress-run:
+    runs-on: ubuntu-22.04
+    needs: install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download the build folder
+        uses: actions/download-artifact@v4
+        
+        with:
+          name: save-screenshots
+          path: ./cypress/screenshots
