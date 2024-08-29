@@ -14,10 +14,8 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v6
         with:
-          
+         sname: npm run sname
          
-          sname: npm run sname
-          base : npm run base
 
       - name: Update screenshots in repository
         
