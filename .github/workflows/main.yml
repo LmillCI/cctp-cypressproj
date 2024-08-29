@@ -10,13 +10,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Run Cypress tests
-        run: "node Screenshottimestring.js"
+      
       - name: Cypress install
         uses: cypress-io/github-action@v6
         with:
          runTests: false
          build: npm run build
+      - name: Run Cypress tests
+        run: "node Screenshottimestring.js"
+      - name: Run Cypress tests
+        run: "node imgtobase64.js"
      
      
        
