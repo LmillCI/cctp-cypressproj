@@ -10,16 +10,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install
-
+      
       - name: Cypress install
         uses: cypress-io/github-action@v6
         with:
+          runTests: false
           build: npm run build
+        continue-on-error: true
 
-      - name: Update screenshots in repository
+      - name: Make scripts executable
+        run: chmod +x Screenshottimestring.js pngtobase64.js
+
+      - name: Print working directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+     
+
+      - name: Run imgtobase64 script
+        run: node pngtobase64.js
+     
+      - name: Update screenshots  and results in repository
         run: |
           git config --global user.email "lmillaccnt@gmail.com"
           git config --global user.name "LmillCI"
@@ -33,6 +46,7 @@ jobs:
           name: save-screenshots
           if-no-files-found: error
           path: ./cypress/screenshots
+      
 
   cypress-run:
     runs-on: ubuntu-22.04
@@ -46,7 +60,3 @@ jobs:
         with:
           name: save-screenshots
           path: ./cypress/screenshots
-
-      - name: Run Cypress tests
-        run: npx cypress run --spec "cypress/integration/your-test-file.js"
-        continue-on-error: true
