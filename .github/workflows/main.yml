@@ -16,6 +16,8 @@ jobs:
         with:
           
           build: npm run build
+          sname: npm run sname
+          base : npm run base
 
       - name: Update screenshots in repository
         
